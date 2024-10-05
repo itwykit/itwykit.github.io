@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>用户注册界面</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <script src="js/register.js"></script>
+  </head>
+  <body>
+    <main>
+      <img src="picture/qinghua3.jpeg" alt="自强不息 "/>
+      <form  onsubmit="return check();">
+        <p>
+          <label for="name">*用户名</label>
+          <input type="text" id="name" name="name" value="请输入学号/工号" />
+        </p>
+        <p>
+          <label for="password">*密码</label>
+          <input type="password" id="password" name="password" />
+        </p>
+        <p>
+          <label for="password-confirmation">*密码确认</label>
+          <input
+            type="password"
+            id="password-confirmation"
+            name="password-confirmation"
+          />
+        </p>
+        <p>
+          <label >性别</label>
+          <span>男</span>
+          <input type="radio" name="gender" id="male" value="male" checked />
+          <span>女</span>
+          <input type="radio" name="gender" id="female" value="female" />
+        </p>
+        <p>
+          <label for="birthdate">出生日期:</label>
+          <input type="date" id="birthdate" name="birthdate" />
+        </p>
+        <p>
+          <label for="email">*邮箱</label>
+          <input type="text" id="email" name="email"/>
+        </p>
+
+        <p>
+          <label for="career">职业</label>
+          <select name="career" id="career">
+            <option value="student">学生</option>
+            <option value="faculty">教师</option>
+          </select>
+        </p>
+        <p>
+          <label >个人爱好</label>
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="computer-networking"
+            value="computer networking"
+          />电脑网络
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="film-televesio-entertainment"
+            value="film & television entertainment"
+          />影视娱乐
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="chess-cards-entertainment"
+            value="chess & cards entertainment"
+          />棋牌娱乐<br />
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="books-newspapers"
+            value="books & newspapers"
+          />读书读报
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="vintage-wine-delicious-food"
+            value="vintage wine & delicious food"
+          />美酒佳肴
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="painting-calligraphy"
+            value="painting & calligraphy"
+          />绘画书法
+        </p>
+
+        <label for="introduction" >个人说明</label>
+        <textarea name="introduction" id="introduction" rows="10" cols="50" style=" vertical-align: top;"></textarea
+        ><br />
+        <button type="submit" >提交</button>
+        <button type="reset">清除</button>
+      </form>
+    </main>
+  </body>
+</html>
